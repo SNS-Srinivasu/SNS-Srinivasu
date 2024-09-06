@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm SNS Srinivasu</h1>
-<h3 align="center">Cloud enthusiast focused on building scalable solutions and exploring innovative cloud technologies</h3>
+<h3 align="center">Excited about Cloud Computing! Recent graduate eager to explore the world of cloud computing.</h3>
 
 - 🌱 I’m currently learning **Docker,Kubernetes and Python**
 
