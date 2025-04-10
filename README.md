@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm SNS Srinivasu</h1>
-<h3 align="center">Cloud enthusiast focused on building scalable solutions and exploring innovative cloud technologies</h3>
+<h3 align="center">Cloud & DevOps enthusiast focused on building scalable solutions and exploring innovative cloud technologies</h3>
 
-- 🌱 I’m currently learning **Docker,Kubernetes and Python**
+- 🌱 Completed my AWS Re/Start program  
 
 - 👨‍💻 All of my projects are available at [https://github.com/SNS-Srinivasu?tab=repositories](https://github.com/SNS-Srinivasu?tab=repositories)
 
