@@ -51,10 +51,4 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=sns-srinivasu&show_icons=true&locale=en&layout=compact" alt="sns-srinivasu" /></p>
 
 
-### 🧩 CI/CD Puzzle Game
-
-Test your DevOps knowledge by arranging tools into the correct pipeline order!
-
-👉 [Play Now](https://sns-srinivasu.github.io/ci-cd-puzzle-game/)
-
 
