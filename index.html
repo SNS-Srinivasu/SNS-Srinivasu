@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CI/CD Pipeline Puzzle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: #e2e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: #94a3b8;
+    }
+    .game-container {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .toolbox, .pipeline {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 12px;
+      min-width: 240px;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+    }
+    .toolbox {
+      border: 2px solid #38bdf8;
+    }
+    .pipeline {
+      border: 2px dashed #64748b;
+    }
+    .block {
+      background: #334155;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      cursor: grab;
+      text-align: center;
+      color: #f8fafc;
+      transition: transform 0.2s ease;
+    }
+    .block:hover {
+      transform: scale(1.05);
+      background: #475569;
+    }
+    .block.dragging {
+      opacity: 0.5;
+    }
+    .pipeline-slot {
+      border: 2px dashed #64748b;
+      height: 50px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      background-color: #0f172a;
+      transition: background-color 0.2s ease;
+    }
+    #feedback {
+      margin-top: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #facc15;
+      min-height: 2rem;
+    }
+    button {
+      margin-top: 1rem;
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ CI/CD Pipeline Puzzle</h1>
+  <p>Drag the tools into the correct order to complete the pipeline!</p>
+  <div class="game-container">
+    <div class="toolbox" id="toolbox">
+      <div class="block" draggable="true" data-name="Git">🐙 Git</div>
+      <div class="block" draggable="true" data-name="Docker">🐳 Docker</div>
+      <div class="block" draggable="true" data-name="Jenkins">☕ Jenkins</div>
+      <div class="block" draggable="true" data-name="EKS">🧊 EKS</div>
+      <div class="block" draggable="true" data-name="ArgoCD">🚀 ArgoCD</div>
+    </div>
+    <div class="pipeline" id="pipeline">
+      <div class="pipeline-slot" data-slot="0">Drop here</div>
+      <div class="pipeline-slot" data-slot="1">Drop here</div>
+      <div class="pipeline-slot" data-slot="2">Drop here</div>
+      <div class="pipeline-slot" data-slot="3">Drop here</div>
+      <div class="pipeline-slot" data-slot="4">Drop here</div>
+    </div>
+  </div>
+  <button onclick="checkAnswer()">✅ Check Pipeline</button>
+  <div id="feedback"></div>
+
+  <script>
+    const correctOrder = ["Git", "Jenkins", "Docker", "EKS", "ArgoCD"];
+    const blocks = document.querySelectorAll(".block");
+    const slots = document.querySelectorAll(".pipeline-slot");
+
+    blocks.forEach(block => {
+      block.addEventListener("dragstart", () => {
+        block.classList.add("dragging");
+      });
+      block.addEventListener("dragend", () => {
+        block.classList.remove("dragging");
+      });
+    });
+
+    slots.forEach(slot => {
+      slot.addEventListener("dragover", e => {
+        e.preventDefault();
+        slot.style.backgroundColor = "#1e293b";
+      });
+      slot.addEventListener("dragleave", () => {
+        slot.style.backgroundColor = "#0f172a";
+      });
+      slot.addEventListener("drop", e => {
+        e.preventDefault();
+        const dragging = document.querySelector(".dragging");
+        if (slot.firstChild && slot.firstChild.classList.contains("block")) {
+          document.getElementById("toolbox").appendChild(slot.firstChild);
+        }
+        slot.innerHTML = "";
+        slot.appendChild(dragging);
+        slot.style.backgroundColor = "#0f172a";
+      });
+    });
+
+    function checkAnswer() {
+      let current = [];
+      slots.forEach(slot => {
+        const item = slot.firstChild;
+        if (item && item.dataset.name) {
+          current.push(item.dataset.name);
+        } else {
+          current.push(null);
+        }
+      });
+
+      if (JSON.stringify(current) === JSON.stringify(correctOrder)) {
+        document.getElementById("feedback").innerText = "🎉 Success! You've built the perfect CI/CD pipeline!";
+      } else {
+        document.getElementById("feedback").innerText = "⚠️ Hmm… Something’s not right. Try again!";
+      }
+    }
+  </script>
+</body>
+</html>
