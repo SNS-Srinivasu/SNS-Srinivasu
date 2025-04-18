@@ -53,6 +53,12 @@
   </a>
 </p>
 
+![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![AWS Free Tier](https://img.shields.io/badge/AWS_Free_Tier-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+
+
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=sns-srinivasu&show_icons=true&locale=en&layout=compact" alt="sns-srinivasu" /></p>
 
