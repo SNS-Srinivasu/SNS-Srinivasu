@@ -48,6 +48,9 @@
   <a target="_blank">
     <img src="https://github.com/SNS-Srinivasu/SNS-Srinivasu/blob/main/AWSEBadge.PNG?raw=true" alt="AWS_Educate" width="120" height="120"/>
   </a>
+  <a href="https://www.credly.com/earner/earned/badge/3763e21e-2437-44fb-9115-9b15325de94b" target="_blank">
+    <img src="https://github.com/SNS-Srinivasu/SNS-Srinivasu/blob/main/aws-certified-cloud-practitioner.png?raw=true" alt="CCP" width="120" height="120"/>
+  </a>
 </p>
 
 
