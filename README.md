@@ -51,6 +51,9 @@
   <a href="https://www.credly.com/earner/earned/badge/3763e21e-2437-44fb-9115-9b15325de94b" target="_blank">
     <img src="https://github.com/SNS-Srinivasu/SNS-Srinivasu/blob/main/aws-certified-cloud-practitioner.png?raw=true" alt="CCP" width="120" height="120"/>
   </a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/SUKURUNAGASAISRINIVASU-3977/27EB848B32A2A4A2?sharingId" target="_blank">
+    <img src="https://github.com/SNS-Srinivasu/SNS-Srinivasu/blob/main/AZ-900.png?raw=true" alt="CCP" width="120" height="120"/>
+  </a>
 </p>
 
 ![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white)
