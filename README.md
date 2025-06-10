@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm SNS Srinivasu</h1>
-<h3 align="center">Cloud & Data enthusiast focused on building scalable solutions and exploring innovative cloud technologies</h3>
+<h3 align="center">Cloud & Devops enthusiast focused on building scalable solutions and exploring innovative cloud technologies</h3>
 
 
 - 🌱 Completed my AWS Re/Start program  
