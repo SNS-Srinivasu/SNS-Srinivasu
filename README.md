@@ -54,9 +54,12 @@
   <a href="https://learn.microsoft.com/api/credentials/share/en-us/SUKURUNAGASAISRINIVASU-3977/27EB848B32A2A4A2?sharingId" target="_blank">
     <img src="https://github.com/SNS-Srinivasu/SNS-Srinivasu/blob/main/AZ-900.png?raw=true" alt="CCP" width="120" height="120"/>
   </a>
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/SUKURUNAGASAISRINIVASU-3977/27EB848B32A2A4A2?sharingId" target="_blank">
+    <img src="https://github.com/SNS-Srinivasu/SNS-Srinivasu/blob/main/github-advanced-security-3.png?raw=true" alt="CCP" width="120" height="120"/>
+  </a>
 </p>
 
-![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-%232496ED.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![AWS Free Tier](https://img.shields.io/badge/AWS_Free_Tier-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
